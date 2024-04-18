@@ -38,18 +38,20 @@
       <p class="promo__subtitle">Занялся собой? Займись котом!</p>
       <a class="promo__button button" href="#">Подобрать программу</a>
     </section>
-    <section class="programm">
+    <section class="program">
       <h2 class="visually-hidden">Выбор программы</h2>
-      <div class="program">
-        <h3 class="program__title program__title--slim">Похудение</h3>
-        <p class="program__discription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="program__link" href="catalog.html">Каталог slim</a>
-      </div>
-      <div class="program">
-        <h3 class="program__title program__title--pro">Набор массы</h3>
-        <p class="program__discription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="program__link" href="catalog.html">Каталог pro</a>
-      </div>
+      <ul class="program__list">
+        <li class="program__item">
+          <h3 class="program__title program__title--slim">Похудение</h3>
+          <p class="program__discription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program__link" href="catalog.html">Каталог slim</a>
+        </li>
+        <li class="program__item">
+          <h3 class="program__title program__title--pro">Набор массы</h3>
+          <p class="program__discription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program__link" href="catalog.html">Каталог pro</a>
+        </li>
+      </ul>
     </section>
     <section class="advantages">
       <h2 class="advantages__title">Как это работает</h2>
@@ -84,11 +86,12 @@
         <div class="example__image cat">
           <img class="cat__image cat__image--fat" src="#" alt="пухлый кот" width="280" height="256">
           <img class="cat__image cat__image--thin" src="#" alt="худой кот" width="280" height="256">
+          <button class="cat__button" type="button">Передвинуть бегунок</button>
         </div>
       </div>
     </section>
     <section class="address">
-      <h2 class="address_title">Приглашаем к сотрудничеству дилеров!</h2>
+      <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="address__map">
         <span class="visually-hidden">Адрес на карте</span>
@@ -96,7 +99,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer_logo logo">
+    <div class="main-footer__logo logo">
       <a class="logo__link" href="#">
         <img class="logo__trademark" src="img/logo-phone.svg" width="33" height="38" alt="Товарный знак Cat Energy">
       </a>
@@ -115,7 +118,7 @@
       </ul>
     </div>
     <div class="main-footer__copyright copyright">
-      <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 </body>
