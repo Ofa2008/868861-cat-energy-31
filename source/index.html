@@ -13,8 +13,8 @@
   <header class="main-header">
     <div class="main-header__logo logo">
       <a class="logo__link" href="index.html">
-        <img class="logo__picture" src="img/logo-phone.svg" width="33" height="38" alt="Cat Energy">
-        <img class="logo__trademark" src="img/logo-phone.svg" width="33" height="38" alt="Товарный знак Cat Energy">
+        <img class="logo__picture" src="#" width="33" height="38" alt="Cat Energy">
+        <img class="logo__trademark" src="#" width="33" height="38" alt="Товарный знак Cat Energy">
       </a>
     </div>
     <nav class="main-nav">
@@ -36,6 +36,11 @@
     <section class="promo">
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index/can-desktop@1x.png 1x, images/index/can-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index/can-tablet@1x.png 1x, images/index/can-tablet@2x.png 2x">
+        <img src="images/index/can-mobile@1x.png" srcset="images/index/can-mobile@2x.png 2x" width="280" height="270" alt="Банка кринного корма Cat Energy Pro">
+      </picture>
       <a class="promo__button button" href="#">Подобрать программу</a>
     </section>
     <section class="program">
@@ -84,8 +89,14 @@
         </dl>
         <p class="example__price">Затраты на питание: 15 000 руб.</p>
         <div class="example__image cat">
-          <img class="cat__image cat__image--fat" src="#" alt="пухлый кот" width="280" height="256">
-          <img class="cat__image cat__image--thin" src="#" alt="худой кот" width="280" height="256">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/cat-before-tablet@1x.png 1x, images/index/cat-befote-tablet@2x.png 2x">
+            <img class="cat__image cat__image--fat" src="images/index/cat-before-mobile@1x.png" srcset="images/index/cat-before-mobile@2x.png 2x" alt="пухлый кот" width="280" height="256">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/cat-after-tablet@1x.png 1x, images/index/cat-after-tablet@2x.png 2x">
+            <img class="cat__image cat__image--thin" src="images/index/cat-after-mobile@1x.png" srcset="images/index/cat-after-mobile@2x.png 2x" alt="худой кот" width="280" height="256">
+          </picture>
           <button class="cat__button" type="button">Передвинуть бегунок</button>
         </div>
       </div>
