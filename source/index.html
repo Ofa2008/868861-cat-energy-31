@@ -6,6 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="/manifest.webmanifest"><!-- 180×180 -->
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -13,8 +17,12 @@
   <header class="main-header">
     <div class="main-header__logo logo">
       <a class="logo__link" href="index.html">
-        <img class="logo__picture" src="#" width="33" height="38" alt="Cat Energy">
-        <img class="logo__trademark" src="#" width="33" height="38" alt="Товарный знак Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__picture" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy">
+        </picture>
+        <img class="logo__trademark" src="images/logo/logo-text.svg" width="101" height="19" alt="Товарный знак компании Cat Energy">
       </a>
     </div>
     <nav class="main-nav">
@@ -106,13 +114,18 @@
       <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="address__map">
         <span class="visually-hidden">Адрес на карте</span>
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="600" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@1x.png 2x">
+          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
+        </picture>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__logo logo">
       <a class="logo__link" href="#">
-        <img class="logo__trademark" src="img/logo-phone.svg" width="33" height="38" alt="Товарный знак Cat Energy">
+        <img class="logo__trademark" src="images/logo/logo-text.svg" width="101" height="19" alt="Товарный знак компании Cat Energy">
       </a>
     </div>
     <div class="main-footer__social">
