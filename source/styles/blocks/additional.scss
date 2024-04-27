@@ -1,0 +1,40 @@
+.additional {
+
+}
+
+.additional__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.additional__list {
+  list-style-type: none;
+}
+
+.additional__name {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.additional__description,
+.additional__price {
+  font-family: $primary-font;
+  font-size: $font-size;
+  line-height: 14px;
+  color: $text-color-base;
+}
+
+.additional__gift {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-secondary;
+  background-color: #68b738;
+}
