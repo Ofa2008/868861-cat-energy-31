@@ -1,0 +1,22 @@
+.advantages {
+  color: $text-color-base;
+}
+
+.advantages__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+}
+
+.advantages__list {
+  list-style-type: none;
+}
+
+.advantages__item {
+  font-family: $primary-font;
+  font-size: $font-size;
+  line-height: 18px;
+}
