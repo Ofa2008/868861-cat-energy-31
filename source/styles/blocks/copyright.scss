@@ -1,6 +1,11 @@
-.copyright {
 
+/* .copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+*/
 
 .copyright__link {
   font-family: $primary-font;
@@ -8,4 +13,20 @@
   line-height: 20px;
   color: $text-color-base;
   text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link::after {
+  content: "";
+  background-color: #666666;
+  width: 27px;
+  height: 34px;
+  display: block;
+  mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+  mask-position: 50%;
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
 }

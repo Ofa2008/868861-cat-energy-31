@@ -1,21 +1,25 @@
 .example {
   background-color: #eaeaea;
   color: $text-color-base;
+  min-width: 320px;
+  padding: 25px 20px 40px;
 }
+
 
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: #000000;
   font-weight: 400;
+  margin: 0 0 40px;
 }
 
 .example__description {
   font-family: $primary-font;
   font-size: $font-size;
   line-height: 18px;
+  margin: 0 0 20px;
 }
 
 .example__value {
@@ -34,5 +38,9 @@
 .example__price {
   font-family: $secondary-font;
   font-size: $font-size;
+  text-transform: uppercase;
+  text-align: center;
   line-height: 20px;
+  margin: 0 0 20px;
+  font-weight: 400;
 }

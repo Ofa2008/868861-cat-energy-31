@@ -1,10 +1,12 @@
-.info-list {
-  list-style-type: none;
-}
+
 
 .info-list__item {
   font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
   color: $text-color-base;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }

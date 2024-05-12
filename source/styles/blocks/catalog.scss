@@ -1,5 +1,10 @@
 .catalog {
+  padding-top: 27px;
+}
 
+.catalog__list {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog__title {
@@ -8,8 +13,12 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 0 auto;
+  padding: 26px 20px 40px;
+  border-bottom: 1px solid #ebebeb;
 }
 
-.catalog-list {
-  list-style-type: none;
+.catalog__button {
+  min-width: 280px;
+  padding: 10px 109px;
 }
