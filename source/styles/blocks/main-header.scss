@@ -1,0 +1,15 @@
+.main-header {
+  min-width: 320px;
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
+}
+
+.main-header__link {
+  gap: 56px;
+}

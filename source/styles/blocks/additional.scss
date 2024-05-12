@@ -1,5 +1,6 @@
 .additional {
-
+  min-width: 280px;
+  padding: 0 20px;
 }
 
 .additional__title {
@@ -10,8 +11,46 @@
   color: #000000;
 }
 
+.additional__title::before {
+  content: "";
+  background-color: #68b738;
+  width: 34px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+}
+
+@media (width >= 768px) {
+  .additional__title {
+    margin-bottom: 80px;
+    margin-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .additional__title::before {
+    width: 357px;
+    right: -30px;
+  }
+
+  .additional__title::after {
+    content: "";
+    background-color: #68b738;
+    width: 30px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -70px;
+  }
+}
+
 .additional__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .additional__name {
@@ -21,14 +60,6 @@
   color: #222222;
   text-transform: uppercase;
   font-weight: 400;
-}
-
-.additional__description,
-.additional__price {
-  font-family: $primary-font;
-  font-size: $font-size;
-  line-height: 14px;
-  color: $text-color-base;
 }
 
 .additional__gift {
