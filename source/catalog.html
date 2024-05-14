@@ -43,8 +43,8 @@
   <main class="main-container">
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
-      <ul class="catalog__list catalog-list">
-        <li class="catalog-list__item card">
+      <ul class="catalog__list">
+        <li class="catalog__item card">
           <a class="card__link-img" href="#">
             <picture>
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/chicken-500-desktop@1x.png 1x, images/catalog/chicken-500-desktop@2x.png 2x">
@@ -69,10 +69,10 @@
               <span class="info-list__value">700 ₽</span>
             </li>
           </ul>
-          <a class="catalog__button button" href="#">Заказать</a>
+          <a class="card__button button" href="#">Заказать</a>
         </li>
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link-img" href="#">
             <picture>
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/chicken-1000-desktop@1x.png 1x, images/catalog/chicken-1000-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/chicken-1000-tablet@1x.png 1x, images/catalog/chicken-1000-tablet@2x.png 2x">
@@ -96,10 +96,10 @@
               <span class="info-list__value">1000 ₽</span>
             </li>
           </ul>
-          <a class="card_button button" href="#">Заказать</a>
+          <a class="card__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog_item card">
-          <a class="card__link" href="#">
+        <li class="catalog__item card">
+          <a class="card__link-img" href="#">
             <picture>
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/fish-500-desktop@1x.png 1x, images/catalog/fish-500-desktop@2x.png 2x">
               <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/fish-500-tablet@1x.png 1x, images/catalog/fish-500-tablet@2x.png 2x">
@@ -125,7 +125,7 @@
           </ul>
           <a class="card__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog_item card">
+        <li class="catalog__item card">
           <a class="card__link" href="#">
             <picture>
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/fish-1000-desktop@1x.png 1x, images/catalog/fish-1000-desktop@2x.png 2x">
@@ -152,7 +152,7 @@
           </ul>
           <a class="card__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog_item card">
+        <li class="catalog__item card">
           <a class="card__link" href="#">
             <picture>
               <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/buckwheat-500-desktop@1x.png 1x, images/catalog/buckwheat-500-desktop@2x.png 2x">
@@ -243,11 +243,13 @@
     <section class="additional">
       <h2 class="additional__title">Дополнительные товары</h2>
       <ul class=" additional__list">
-        <li class="additional__item">
-          <h3 class="additional__name">Сахарозаменитель</h3>
-          <p class="additional__description">1 упаковка (100 г)</p>
-          <p class="additional__price">200 ₽</p>
-          <a class="additional__button button" href="#">Заказать</a>
+        <li class="additional__item product">
+          <h3 class="product__title">Сахарозаменитель</h3>
+          <div class="product__wraper"></div>
+          <span class="product__description">1 упаковка (100 г)</span>
+          <span class="product__price">200 ₽</span>
+          </div>
+          <a class="product__button button" href="#">Заказать</a>
         </li>
         <li class="additional__item">
           <h3 class="additional__name">Питьевая вода</h3>
@@ -268,7 +270,9 @@
           <a class="additional__button button" href="#">Заказать</a>
         </li>
       </ul>
-      <p class="additional__gift">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional__gift gift">
+        <p class="gift-text">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </section>
     <section class="subscribe">
       <h2 class="subscribe__title">Акции и новинки</h2>
