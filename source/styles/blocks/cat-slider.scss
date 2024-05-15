@@ -1,0 +1,79 @@
+.cat-slider {
+  position: relative;
+}
+
+.cat-slider__image {
+  object-fit: cover;
+  width: 280px;
+  height: 256px;
+  display: block;
+}
+
+.cat-slider__image--fat {
+  object-position: left;
+}
+
+.cat-slider__image--thin {
+  object-position: right;
+}
+
+.cat-slider__base {
+  width: 50%;
+}
+
+.cat-slider__resize {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cat-slider__button {
+  z-index: 1;
+  cursor: pointer;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -2px;
+}
+
+.cat-slider__button::before {
+  content: "";
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cat-slider__button::after {
+  content: "";
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: url("../../icons/stack.svg#thumb");
+  mask-position: 50%;
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+}
+
+@media (width >= 768px) {
+  .cat-slider__image {
+    width: 560px;
+    height: 512px;
+  }
+}
